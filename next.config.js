@@ -20,6 +20,7 @@ const nextConfig = {
           extraOptions: {
             exposePages: true,
           },
+          shared: require("./package.json").dependencies,
         })
       );
     }

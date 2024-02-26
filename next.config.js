@@ -5,6 +5,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    unoptimized: true,
+  },
+  output: "export",
   reactStrictMode: true,
   webpack(config, options) {
     Object.assign(config.experiments, { topLevelAwait: true });
